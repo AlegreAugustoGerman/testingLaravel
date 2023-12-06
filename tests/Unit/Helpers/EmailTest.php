@@ -3,7 +3,7 @@
 namespace Tests\Unit\Helpers;
 
 use PHPUnit\Framework\TestCase;
-
+use App\Helpers\Email;
 class EmailTest extends TestCase
 {
     /**
@@ -19,7 +19,7 @@ class EmailTest extends TestCase
         //$result=(bool) filter_var($email,FILTER_VALIDATE_EMAIL);
 
         //como se debe realizar probando resultados de algo externo
-        $result =Email::validate('a@a.com');
+        $result = Email::validate('a@a.com');
         $this->assertTrue($result);
     }
 }
