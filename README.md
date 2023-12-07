@@ -18,6 +18,14 @@ https://www.php.net/manual/es/filter.filters.validate.php
 #Crear un test unitario dentro de la carpeta Helpers
 php artisan make:test Helpers/EmailTest --unit
 
+#ejecutar test una ves definidos
+php artisan test
+
+#ejecutar un test especifico 
+php artisan test --filter nombrefunción 
+Ejemplo:
+php artisan test --filter testEmail 
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
